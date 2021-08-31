@@ -1,0 +1,24 @@
+# Palapa ring 7 kota besar
+router
+
+# node  comment     yPos    xPos
+medan        NA        9       1
+balikpapan   NA        6       9
+makassar     NA        5       10
+jakarta      NA        4       4
+bali         NA        3       8
+ambon        NA        5       14
+papua        NA        6       19
+bogor        NA        2       4
+
+link
+
+# srcNode      dstNode     bandwidth   metric  delay   queue
+medan          balikpapan    20Mbps      1       10ms    100
+balikpapan     makassar      20Mbps      1       10ms    100
+makassar       ambon         20Mbps      1       10ms    100
+ambon          papua         20Mbps      1       10ms    100
+papua          bali          20Mbps      1       10ms    100
+bali           jakarta       20Mbps      1       10ms    100
+jakarta        medan         20Mbps      1       10ms    100
+jakarta        bogor         10Mbps      1       10ms    100
